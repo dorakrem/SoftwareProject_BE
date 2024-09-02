@@ -7,8 +7,8 @@ It supports CRUD operations for both clinics and patients, and it provides authe
 
 Technologies Used
 
-*Backend Framework: Spring Boot
-*Database: PostgreSQL
-*Authentication: JWT (JSON Web Tokens)
+* Backend Framework: Spring Boot
+* Database: PostgreSQL
+* Authentication: JWT (JSON Web Tokens)
 
-Testing of the API endpoints was done using Postman
+Testing of the API endpoints was done using Postman.
