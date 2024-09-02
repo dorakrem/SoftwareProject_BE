@@ -1,0 +1,20 @@
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    login VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(64) NOT NULL
+);
+
+CREATE TABLE clinics (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) UNIQUE NOT NULL
+);
+
+CREATE TABLE patients (
+    id SERIAL PRIMARY KEY,
+    amka VARCHAR(20) UNIQUE NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    clinic_id INTEGER NOT NULL,
+    FOREIGN KEY (clinic_id) REFERENCES clinics(id)
+);
